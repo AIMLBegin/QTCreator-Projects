@@ -1,10 +1,11 @@
-// main.cpp
-#include <QApplication>
-#include "loginwindow.h"
+#include "mainwindow.h"
 
-int main(int argc, char *argv[]) {
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
     QApplication a(argc, argv);
-    LoginWindow loginWindow;
-    loginWindow.show();
+    MainWindow w;
+    w.show();
     return a.exec();
 }
